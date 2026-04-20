@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Club Taquero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Aproximaciones gratuitas para Araboto, Bronco, Hero New -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li class="separator">|</li>
+                    <li><a href="#about">About us</a></li>
+                    <li class="separator">|</li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section-home">
+            <div class="home-content">
+                <img src="assets/logo_criollo.jpg" alt="El Criollo" class="home-logo-img">
+                <h1>EL CLUB TAQUERO</h1>
+                <p class="subtitle">El primer club de tacos en Madrid.<br>
+                Porque si te gustan los tacos, este es tu sitio.</p>
+                <p class="description">Únete al club y entérate de todas nuestras<br>novedades, promociones y eventos exclusivos.</p>
+                <button class="btn-primary" onclick="window.location.href='https://www.el-criollo.com'">Saber más</button>
+            </div>
+            <div class="home-image">
+                <img src="assets/imagen_1.jpg" alt="Tacos">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-about">
+            <div class="about-image">
+                <img src="assets/imagen_3.jpg" alt="Disfrutando tacos">
+            </div>
+            <div class="about-content">
+                <h2>Sobre Nosotros</h2>
+                <p>El Criollo nace de la pasión por la auténtica comida callejera de México. Nuestro objetivo es traer a Madrid el verdadero sabor de los tacos, preparados con ingredientes frescos y recetas tradicionales.</p>
+                <p>En El Criollo no solo vienes a comer, vienes a vivir una experiencia. ¡Te esperamos!</p>
+                <button class="btn-primary" onclick="window.location.href='https://www.el-criollo.com'">Ver Menú</button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-contact">
+            <div class="contact-top">
+                <div class="contact-info">
+                    <h2>Contáctanos</h2>
+                    <p>¿Preguntas, consultas, o<br>antojos? Déjanos tus datos y te<br>contactamos:</p>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Leave a message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button id="btn-enviar" type="button" class="btn-enviar">Enviar</button>
+                        <p class="form-disclaimer">Your Canva profile name won't be shared. Never send passwords.</p>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-bottom">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <p class="est-text">EST. 2023</p>
+                        <h3>EL CRIOLLO</h3>
+                        <p class="tacos-text">TACOS A LA PARRILLA</p>
+                    </div>
+                    <div class="location-info">
+                        <h4>Ubicación del local:</h4>
+                        <p>Calle Palencia 06 (lateral Mercado<br>Maravillas)</p>
+                    </div>
+                    <div class="social-info">
+                        <h4>Redes Sociales</h4>
+                        <div class="social-icons">
+                            <!-- Nota: Si tienes los iconos descargados con otro nombre, ajusta "redes_1.png" etc -->
+                            <a href="https://www.el-criollo.com" target="_blank"><img src="assets/icono_1.png" alt="Instagram"></a>
+                            <a href="https://www.el-criollo.com" target="_blank"><img src="assets/icono_2.png" alt="WhatsApp"></a>
+                            <a href="https://www.el-criollo.com" target="_blank"><img src="assets/icono_3.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-image">
+                    <img src="assets/imagen_2.png" alt="Tacos variados">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
